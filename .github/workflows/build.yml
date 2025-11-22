@@ -2,9 +2,13 @@ name: Build and Test
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
+    paths:
+      - 'BearBuddy/**'
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main ]
+    paths:
+      - 'BearBuddy/**'
 
 jobs:
   build:
@@ -22,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: BearBuddy/package-lock.json
+        cache-dependency-path: './BearBuddy/package-lock.json'
     
     - name: Install dependencies
       working-directory: ./BearBuddy
