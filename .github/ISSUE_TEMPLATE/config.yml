@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/PCWProps/extensions-dev/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 💎 BearBuddy Pro Support
+    url: https://github.com/PCWProps/extensions-dev/discussions/categories/bearbuddy-pro
+    about: Priority support for BearBuddy Pro users
+  - name: 📚 Documentation
+    url: https://pcwprops.github.io/extensions-dev/BearBuddy
+    about: Read the documentation

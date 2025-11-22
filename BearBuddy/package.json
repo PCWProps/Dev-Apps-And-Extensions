@@ -1,0 +1,38 @@
+{
+  "name": "bearbuddy-monorepo",
+  "version": "1.0.0",
+  "description": "BearBuddy VSCode Extension Monorepo - Free and Pro versions",
+  "private": true,
+  "workspaces": [
+    "BearBuddy-Free",
+    "BearBuddy-Pro"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build": "npm run build --workspaces",
+    "build:free": "npm run build --workspace=BearBuddy-Free",
+    "build:pro": "npm run build --workspace=BearBuddy-Pro",
+    "watch": "npm run watch --workspaces",
+    "watch:free": "npm run watch --workspace=BearBuddy-Free",
+    "watch:pro": "npm run watch --workspace=BearBuddy-Pro",
+    "package": "npm run package --workspaces",
+    "package:free": "npm run package --workspace=BearBuddy-Free",
+    "package:pro": "npm run package --workspace=BearBuddy-Pro",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PCWProps/extensions-dev.git",
+    "directory": "BearBuddy"
+  },
+  "author": "PCW|Props",
+  "license": "SEE LICENSE IN BearBuddy-Free AND BearBuddy-Pro"
+}
