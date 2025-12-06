@@ -1,0 +1,29 @@
+{
+  "source": {
+    "branch": "main",
+    "path": "/website"
+  },
+  "theme": "jekyll-theme-minimal",
+  "plugins": [
+    "jekyll-feed",
+    "jekyll-seo-tag",
+    "jekyll-sitemap"
+  ],
+  "exclude": [
+    "node_modules",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock"
+  ],
+  "defaults": [
+    {
+      "scope": {
+        "path": "",
+        "type": "pages"
+      },
+      "values": {
+        "layout": "default"
+      }
+    }
+  ]
+}
