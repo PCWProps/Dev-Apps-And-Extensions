@@ -1,0 +1,24 @@
+{
+  "name": "@repo/vercel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc",
+    "deploy": "vercel --prod",
+    "deploy:dev": "vercel",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Tests not yet implemented\" && exit 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/logger": "workspace:*",
+    "@repo/shared-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vercel/node": "^3.0.15",
+    "typescript": "^5.3.3",
+    "vercel": "^33.0.2"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "bearbuddy-pro",
+  "displayName": "BearBuddy Pro",
+  "description": "Your friendly coding companion for VSCode - Professional Edition with advanced features",
+  "version": "1.0.0",
+  "publisher": "PCWProps",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bearbuddy-pro.helloWorld",
+        "title": "BearBuddy Pro: Hello World"
+      },
+      {
+        "command": "bearbuddy-pro.advancedFeature",
+        "title": "BearBuddy Pro: Advanced Feature"
+      },
+      {
+        "command": "bearbuddy-pro.enterLicense",
+        "title": "BearBuddy Pro: Enter License Key"
+      },
+      {
+        "command": "bearbuddy-pro.checkLicense",
+        "title": "BearBuddy Pro: Check License Status"
+      }
+    ],
+    "configuration": {
+      "title": "BearBuddy Pro",
+      "properties": {
+        "bearbuddy-pro.licenseKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your BearBuddy Pro license key"
+        },
+        "bearbuddy-pro.enableTelemetry": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable anonymous telemetry"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run build",
+    "build": "node ../../config/build/bundler.mjs --production",
+    "dev": "node ../../config/build/bundler.mjs --watch",
+    "watch": "node ../../config/build/bundler.mjs --watch",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "lint": "eslint src --ext .ts",
+    "test": "echo \"Tests not yet implemented\" && exit 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/logger": "workspace:*",
+    "@repo/shared-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.22.0",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PCWProps/Dev-Apps-And-Extensions.git",
+    "directory": "extensions/pro-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/PCWProps/Dev-Apps-And-Extensions/issues"
+  },
+  "homepage": "https://pcwprops.github.io/Dev-Apps-And-Extensions"
+}

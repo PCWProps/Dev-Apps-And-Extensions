@@ -1,0 +1,16 @@
+title: Dev Apps & Extensions
+description: Production-grade monorepo for VS Code extensions and cloud infrastructure
+url: https://pcwprops.github.io
+baseurl: /Dev-Apps-And-Extensions
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown
+highlighter: rouge
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
