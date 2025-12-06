@@ -1,0 +1,7 @@
+packages:
+  - 'extensions/*'
+  - 'cloudflare'
+  - 'vercel'
+  - 'website'
+  - 'tools/*'
+  - 'automation'

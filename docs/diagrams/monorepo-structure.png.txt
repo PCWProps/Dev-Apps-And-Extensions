@@ -1,0 +1,3 @@
+# Placeholder for monorepo-structure.png
+# This would be a visual diagram showing the folder structure
+# Generated using draw.io, PlantUML, or similar tool
