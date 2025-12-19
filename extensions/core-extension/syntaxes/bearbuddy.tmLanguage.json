@@ -1,0 +1,52 @@
+{
+  "scopeName": "source.bearbuddy",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.bearbuddy",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.bearbuddy",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.bearbuddy",
+          "match": "\\b(if|else|while|for|return|break|continue)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.bearbuddy",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.bearbuddy",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

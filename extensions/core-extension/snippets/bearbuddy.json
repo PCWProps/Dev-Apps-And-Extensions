@@ -1,0 +1,51 @@
+{
+  "BearBuddy Console Log": {
+    "prefix": "bblog",
+    "body": [
+      "console.log('🐻 BearBuddy:', ${1:message});"
+    ],
+    "description": "BearBuddy console log with emoji"
+  },
+  "BearBuddy Function": {
+    "prefix": "bbfn",
+    "body": [
+      "/**",
+      " * ${1:functionName}",
+      " * @param {${2:type}} ${3:param}",
+      " * @returns {${4:type}}",
+      " */",
+      "function ${1:functionName}(${3:param}) {",
+      "  ${5:// implementation}",
+      "  return ${6:result};",
+      "}"
+    ],
+    "description": "BearBuddy documented function"
+  },
+  "BearBuddy Try-Catch": {
+    "prefix": "bbtry",
+    "body": [
+      "try {",
+      "  ${1:// try code}",
+      "} catch (error) {",
+      "  console.error('🐻 BearBuddy Error:', error);",
+      "  ${2:// error handling}",
+      "}"
+    ],
+    "description": "BearBuddy try-catch block"
+  },
+  "BearBuddy Async Function": {
+    "prefix": "bbasync",
+    "body": [
+      "async function ${1:functionName}(${2:params}) {",
+      "  try {",
+      "    ${3:// async code}",
+      "    return ${4:result};",
+      "  } catch (error) {",
+      "    console.error('🐻 BearBuddy Error:', error);",
+      "    throw error;",
+      "  }",
+      "}"
+    ],
+    "description": "BearBuddy async function with error handling"
+  }
+}

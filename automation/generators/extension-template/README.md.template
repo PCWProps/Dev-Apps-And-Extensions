@@ -1,0 +1,29 @@
+# {{displayName}}
+
+{{description}}
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Requirements
+
+- VS Code 1.80.0 or higher
+
+## Extension Settings
+
+This extension contributes the following settings:
+
+* `{{extensionName}}.enabled`: Enable/disable this extension
+
+## Known Issues
+
+None at this time.
+
+## Release Notes
+
+### 0.1.0
+
+Initial release

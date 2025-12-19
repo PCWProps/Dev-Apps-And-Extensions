@@ -1,0 +1,17 @@
+name: bearbuddy-infrastructure
+runtime: nodejs
+description: BearBuddy infrastructure using Pulumi
+
+config:
+  environment:
+    type: string
+    default: dev
+  cloudflareAccountId:
+    type: string
+    secret: false
+  cloudflareApiToken:
+    type: string
+    secret: true
+  vercelApiToken:
+    type: string
+    secret: true

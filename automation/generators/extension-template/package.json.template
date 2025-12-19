@@ -1,0 +1,44 @@
+{
+  "name": "{{extensionName}}",
+  "displayName": "{{displayName}}",
+  "description": "{{description}}",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "{{extensionName}}.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "configuration": {
+      "title": "{{displayName}}",
+      "properties": {
+        "{{extensionName}}.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable {{displayName}}"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run build",
+    "build": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
+    "watch": "pnpm run build --watch",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.x",
+    "esbuild": "^0.19.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
