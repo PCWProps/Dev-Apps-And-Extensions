@@ -306,10 +306,34 @@ package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# pnpm
+.pnpm-store/
+pnpm-lock.yaml
 
 # VSCode extension build output
 **/dist/
 *.vsix
+
+# Turbo
+.turbo/
+
+# Cloudflare Workers
+.wrangler/
+.dev.vars
+
+# Vercel
+.vercel/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Temporary files
+/tmp/
 
 # Visual Studio 6 build log
 *.plg

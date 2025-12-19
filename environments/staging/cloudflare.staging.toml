@@ -1,0 +1,38 @@
+name = "dev-apps-extensions-staging"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+workers_dev = false
+
+[env.staging]
+name = "dev-apps-extensions-staging"
+route = "staging.api.example.com/*"
+
+[[env.staging.kv_namespaces]]
+binding = "SESSIONS"
+id = "staging_sessions_namespace_id"
+
+[[env.staging.kv_namespaces]]
+binding = "CACHE"
+id = "staging_cache_namespace_id"
+
+[[env.staging.r2_buckets]]
+binding = "ASSETS"
+bucket_name = "staging-assets"
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "staging-database"
+database_id = "staging_database_id"
+
+[[env.staging.vectorize]]
+binding = "VECTORIZE"
+index_name = "staging-embeddings"
+
+[[env.staging.queues.producers]]
+binding = "TASKS"
+queue = "staging-tasks-queue"
+
+[env.staging.vars]
+ENVIRONMENT = "staging"
+API_BASE_URL = "https://staging.api.example.com"
+ENABLE_DEBUG = "false"

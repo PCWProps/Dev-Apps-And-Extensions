@@ -1,0 +1,29 @@
+{
+  "name": "@repo/automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automation scripts and CLI tools for the monorepo",
+  "main": "dist/index.js",
+  "bin": {
+    "repo-cli": "./cli/index.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Tests not yet implemented\" && exit 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "execa": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}

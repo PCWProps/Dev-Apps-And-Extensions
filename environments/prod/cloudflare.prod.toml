@@ -1,0 +1,38 @@
+name = "dev-apps-extensions-prod"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+workers_dev = false
+
+[env.production]
+name = "dev-apps-extensions-prod"
+route = "api.example.com/*"
+
+[[env.production.kv_namespaces]]
+binding = "SESSIONS"
+id = "prod_sessions_namespace_id"
+
+[[env.production.kv_namespaces]]
+binding = "CACHE"
+id = "prod_cache_namespace_id"
+
+[[env.production.r2_buckets]]
+binding = "ASSETS"
+bucket_name = "prod-assets"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "prod-database"
+database_id = "prod_database_id"
+
+[[env.production.vectorize]]
+binding = "VECTORIZE"
+index_name = "prod-embeddings"
+
+[[env.production.queues.producers]]
+binding = "TASKS"
+queue = "prod-tasks-queue"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+API_BASE_URL = "https://api.example.com"
+ENABLE_DEBUG = "false"

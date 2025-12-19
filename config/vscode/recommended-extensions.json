@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "ms-vscode.vscode-typescript-next",
+    "yoavbls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "prisma.prisma",
+    "hediet.vscode-drawio",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "gruntfuggly.todo-tree",
+    "christian-kohler.path-intellisense",
+    "visualstudioexptteam.vscodeintellicode",
+    "github.copilot"
+  ]
+}

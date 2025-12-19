@@ -1,0 +1,12 @@
+{
+  "name": "@repo/website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "jekyll build",
+    "dev": "jekyll serve --livereload",
+    "clean": "rm -rf _site",
+    "test": "echo \"No tests for website\" && exit 0"
+  },
+  "devDependencies": {}
+}

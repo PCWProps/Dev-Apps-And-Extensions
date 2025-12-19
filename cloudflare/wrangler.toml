@@ -1,0 +1,16 @@
+name = "dev-apps-extensions"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+[env.dev]
+name = "dev-apps-extensions-dev"
+vars = { ENVIRONMENT = "development" }
+
+[env.staging]
+name = "dev-apps-extensions-staging"
+vars = { ENVIRONMENT = "staging" }
+
+[env.production]
+name = "dev-apps-extensions-prod"
+vars = { ENVIRONMENT = "production" }

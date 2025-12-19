@@ -1,0 +1,3 @@
+# Placeholder for pipelines.svg
+# This would be a CI/CD pipeline diagram
+# Generated using draw.io or similar tool

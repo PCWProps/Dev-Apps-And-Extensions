@@ -1,0 +1,26 @@
+{
+  "buildCommand": "pnpm build",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "outputDirectory": "dist",
+  "env": {
+    "NODE_ENV": "production",
+    "API_BASE_URL": "https://api.example.com",
+    "CLOUDFLARE_WORKER_URL": "https://workers.example.com"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "functions": {
+    "api/**/*.ts": {
+      "memory": 1024,
+      "maxDuration": 10
+    },
+    "edge/**/*.ts": {
+      "runtime": "edge"
+    }
+  }
+}

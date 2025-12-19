@@ -1,0 +1,3 @@
+# Placeholder for extension-flow.png
+# This would show the extension activation and command flow
+# Generated using draw.io or similar tool

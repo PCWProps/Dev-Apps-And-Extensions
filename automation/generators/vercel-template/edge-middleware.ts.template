@@ -1,0 +1,15 @@
+import type { NextRequest } from 'next/server';
+
+export const config = {
+  runtime: 'edge',
+};
+
+export default async function middleware(req: NextRequest) {
+  // Your middleware logic here
+  
+  const response = new Response(JSON.stringify({ success: true }), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  return response;
+}
